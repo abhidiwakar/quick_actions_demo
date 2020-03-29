@@ -16,6 +16,9 @@ git clone https://github.com/abhidiwakar/quick_actions_demo.git
 
 Open source code in your favorite code editor. ([VSCode](https://code.visualstudio.com/) preferred) and start editing the code as you wish.
 
+### Watch tutorial video on YouTube
+[![flutter quick action tutorial](https://img.youtube.com/vi/Pt_e5rrL-X8/0.jpg)](https://www.youtube.com/watch?v=Pt_e5rrL-X8 )
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
