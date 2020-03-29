@@ -1,16 +1,28 @@
-# flutter_quick_action
+# Flutter Quick Actions
 
-A new Flutter project.
+This is a demo app made using Flutter. This app is used to demonstrate the usage of quick_actions package in flutter. quick_actions package allows us to show a popup shortcut menu in our flutter app when a user press and holds the flutter application icon. In android, it is called App shortcut and in iOS, it is called Quick Actions (3d Touch).
+
+<img src="https://github.com/abhidiwakar/quick_actions_demo/blob/master/screenshot.jpg" width="720" height="480">
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Step 1: Clone this repository using the following command
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+git clone https://github.com/abhidiwakar/quick_actions_demo.git
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usage
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Open source code in your favorite code editor. ([VSCode](https://code.visualstudio.com/) preferred) and start editing the code as you wish.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update the tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Social Links
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/100px-Instagram_logo_2016.svg.png" width="20" height="20"> [Instagram](https://www.instagram.com/nameless_coder/)
