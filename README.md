@@ -2,7 +2,7 @@
 
 This is a demo app made using Flutter. This app is used to demonstrate the usage of quick_actions package in flutter. quick_actions package allows us to show a popup shortcut menu in our flutter app when a user press and holds the flutter application icon. In android, it is called App shortcut and in iOS, it is called Quick Actions (3d Touch).
 
-<img src="https://github.com/abhidiwakar/quick_actions_demo/blob/master/screenshot.jpg" width="720" height="480">
+<img src="https://github.com/abhidiwakar/quick_actions_demo/blob/master/screenshot.jpg" width="480" height="720">
 
 ## Getting Started
 
