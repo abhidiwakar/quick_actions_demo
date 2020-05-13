@@ -16,6 +16,13 @@ Step 1: Clone this repository using the following command
 git clone https://github.com/abhidiwakar/quick_actions_demo.git
 ```
 
+Step 2: Run this command
+
+```bash
+flutter pub get
+```
+
+
 ## Usage
 
 Open source code in your favorite code editor. ([VSCode](https://code.visualstudio.com/) preferred) and start editing the code as you wish.
