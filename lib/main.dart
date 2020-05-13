@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quick_action/pages/page1.dart';
 import 'package:flutter_quick_action/pages/page2.dart';
@@ -38,20 +41,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
 
-    _quickActions.setShortcutItems(<ShortcutItem>[
-      const ShortcutItem(
-          type: 'page1', localizedTitle: 'Goto Page1', icon: 'g_earth'),
-      const ShortcutItem(
-          type: 'page2', localizedTitle: 'Goto Page2', icon: 'star'),
-      const ShortcutItem(
-          type: 'page3', localizedTitle: 'Goto Page3', icon: 'g_earth'),
-      const ShortcutItem(
-          type: 'page4', localizedTitle: 'Goto Page4', icon: 'star'),
-      const ShortcutItem(
-          type: 'page5', localizedTitle: 'Goto Page5', icon: 'g_eath'),
-    ]);
-
     _quickActions.initialize((String shortcut) {
+      print(shortcut);
       if (shortcut != null) {
         if (shortcut == 'page1') {
           Navigator.push(
@@ -93,14 +84,33 @@ class _MyHomePageState extends State<MyHomePage> {
         }
       }
     });
+
+    _quickActions.setShortcutItems(
+      <ShortcutItem>[
+        const ShortcutItem(
+            type: 'page1', localizedTitle: 'Goto Page1', icon: 'g_earth'),
+        const ShortcutItem(
+            type: 'page2', localizedTitle: 'Goto Page2', icon: 'star'),
+        const ShortcutItem(
+            type: 'page3', localizedTitle: 'Goto Page3', icon: 'g_earth'),
+        const ShortcutItem(
+            type: 'page4', localizedTitle: 'Goto Page4', icon: 'star'),
+        const ShortcutItem(
+            type: 'page5', localizedTitle: 'Goto Page5', icon: 'g_eath'),
+      ],
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: Platform.isIOS
+          ? CupertinoNavigationBar(
+              middle: Text(widget.title),
+            )
+          : AppBar(
+              title: Text(widget.title),
+            ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

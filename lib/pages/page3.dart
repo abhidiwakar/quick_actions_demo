@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Page3 extends StatefulWidget {
@@ -9,7 +12,12 @@ class _Page3State extends State<Page3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Page 3')),
+      appBar: Platform.isIOS
+          ? CupertinoNavigationBar(
+              middle: Text('Page 3'),
+              previousPageTitle: 'Back',
+            )
+          :  AppBar(title: Text('Page 3')),
     );
   }
 }
