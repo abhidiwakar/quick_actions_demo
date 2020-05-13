@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
         const ShortcutItem(
             type: 'page4', localizedTitle: 'Goto Page4', icon: 'star'),
         const ShortcutItem(
-            type: 'page5', localizedTitle: 'Goto Page5', icon: 'g_eath'),
+            type: 'page5', localizedTitle: 'Goto Page5', icon: 'g_earth'),
       ],
     );
   }
