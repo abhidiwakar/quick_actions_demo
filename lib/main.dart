@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_quick_action/pages/page1.dart';
 import 'package:flutter_quick_action/pages/page2.dart';
 import 'package:flutter_quick_action/pages/page3.dart';
-import 'package:flutter_quick_action/pages/page4.dart';
-import 'package:flutter_quick_action/pages/page5.dart';
 import 'package:quick_actions/quick_actions.dart';
 
 void main() => runApp(MyApp());
@@ -65,20 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (ctx) => Page3(),
             ),
           );
-        } else if (shortcut == 'page4') {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (ctx) => Page4(),
-            ),
-          );
-        } else if (shortcut == 'page5') {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (ctx) => Page5(),
-            ),
-          );
         } else {
           debugPrint('No quick action selected!');
         }
@@ -88,15 +72,20 @@ class _MyHomePageState extends State<MyHomePage> {
     _quickActions.setShortcutItems(
       <ShortcutItem>[
         const ShortcutItem(
-            type: 'page1', localizedTitle: 'Goto Page1', icon: 'g_earth'),
+          type: 'page1',
+          localizedTitle: 'Goto Page1',
+          icon: 'ic_home_black_24',
+        ),
         const ShortcutItem(
-            type: 'page2', localizedTitle: 'Goto Page2', icon: 'star'),
+          type: 'page2',
+          localizedTitle: 'Goto Page2',
+          icon: 'ic_trending_black_24',
+        ),
         const ShortcutItem(
-            type: 'page3', localizedTitle: 'Goto Page3', icon: 'g_earth'),
-        const ShortcutItem(
-            type: 'page4', localizedTitle: 'Goto Page4', icon: 'star'),
-        const ShortcutItem(
-            type: 'page5', localizedTitle: 'Goto Page5', icon: 'g_earth'),
+          type: 'page3',
+          localizedTitle: 'Goto Page3',
+          icon: 'ic_category_black_24',
+        ),
       ],
     );
   }
